@@ -76,17 +76,21 @@ header {
 }
 
 header h1 {
+    float: left;
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
+    text-align: left;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
 header p {
+    float: left;
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
+    text-align: left;
     color: white;
     max-width: 600px;
     padding-right: 10px;
