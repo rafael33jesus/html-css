@@ -1,2 +1,66 @@
 @charset "UTF-8";
 
+*{ 
+    margin: 0px; /* zerou as configurações do padding e do margin de todos os elementos */
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* 100% da altura da viewport */ 
+    background-color: darkgray;
+}
+
+header {
+    background-color: black; /* cor de fundo */
+    color: white; /* cor da fonte */
+    text-align: center; /* alinhamento do texto */
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* A primeira letra em caixa alta e o restante em caixa baixa */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none; /* removeu a configuração da fonte do link */
+    font-weight: bolder; /* peso da fonte */
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* ao passar o cursor sobre o link, ele fica sublinhado */
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* espaçamento em altura entre as frases */
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
