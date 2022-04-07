@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* precisa desse elemento para o cabeçalho fixo*/
         }
 
         td, th {
@@ -30,6 +31,12 @@
         thead, tfoot {
             background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th { /* cabeçalho fixo em tabelas grandes*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd) { /* efeito zebrado na celula impar (2n-1)*/
